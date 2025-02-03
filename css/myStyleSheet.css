@@ -33,7 +33,7 @@ button:hover {
 }
 
 #timerGif {
-    width: 50px; /* Adjust size as needed */
+    width: auto; /* Adjust size as needed */
     height: auto;
     margin-left: 10px;
     vertical-align: middle;

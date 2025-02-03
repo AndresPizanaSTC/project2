@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let running = false;
     const gif = document.getElementById("timerGif");
 
-
     function updateTimer() {
         seconds++;
         if (seconds === 60) {
