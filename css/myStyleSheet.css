@@ -31,3 +31,14 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#timerGif {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}

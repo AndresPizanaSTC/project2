@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let timer;
     let seconds = 0, minutes = 0, hours = 0;
     let running = false;
+    const gif = document.getElementById("timerGif");
+
 
     function updateTimer() {
         seconds++;
@@ -21,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function startTimer() {
         if (!running) {
             running = true;
+            gif.classList.remove("hidden");
             timer = setInterval(updateTimer, 1000);
         }
     }
@@ -28,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function stopTimer() {
         running = false;
         clearInterval(timer);
+        gif.classList.add("hidden");
     }
 
     function resetTimer() {
@@ -35,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(timer);
         seconds = minutes = hours = 0;
         document.getElementById("timer").innerText = "00:00:00";
+        gif.classList.add("hidden");
     }
 
     document.getElementById("startBtn").addEventListener("click", startTimer);
